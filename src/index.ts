@@ -27,8 +27,8 @@ export default {
       return Response.json({ ok: true });
     }
     if (url.pathname.startsWith('/') && request.method === 'DELETE') {
-		const results = {};
- return new Response(renderHtml(JSON.stringify(results, null, 2)), {
+		const results =JSON.stringify({}, null, 2);
+ return new Response(renderHtml(), {
 			headers: {
 				"content-type": "text/html",
 			},
