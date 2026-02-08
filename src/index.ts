@@ -26,7 +26,7 @@ export default {
       await db.prepare('DELETE FROM maps WHERE id=?').bind(id).run();
       return Response.json({ ok: true });
     }
-    if (url.pathname.startsWith('/') && request.method === 'DELETE') {
+    if (url.pathname.startsWith('/')) {
 		const results =JSON.stringify({}, null, 2);
  return new Response(renderHtml(), {
 			headers: {
