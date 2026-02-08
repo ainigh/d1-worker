@@ -1,0 +1,16 @@
+{
+	"compatibility_date": "2025-10-08",
+	"main": "src/index.ts",
+	"name": "d1-worker",
+	"upload_source_maps": true,
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_id": "a8ee2d09-2e71-49c6-9c55-a3ae777d5131",
+			"database_name": "nigh-d1-database"
+		}
+	],
+	"observability": {
+		"enabled": true
+	}
+}
